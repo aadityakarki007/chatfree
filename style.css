@@ -1,0 +1,132 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Main body */
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login screen */
+#login-container {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#login-container input {
+  padding: 12px;
+  width: 80%;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login-container button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login-container button:hover {
+  background-color: #45a049;
+}
+
+/* Chat screen */
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-height: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#messages {
+  flex-grow: 1;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+#message-container {
+  display: flex;
+  align-items: center;
+}
+
+#message-input {
+  padding: 12px;
+  width: 80%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#send-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #0056b3;
+}
+
+/* Message styling */
+.message {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message .username {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+.message .text {
+  background-color: #e2f0fe;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 75%;
+}
+
+/* For message sender */
+.message.sent .text {
+  background-color: #d1ffd1;
+  margin-left: auto;
+}
+
+.message.received .text {
+  background-color: #f0f0f0;
+}
